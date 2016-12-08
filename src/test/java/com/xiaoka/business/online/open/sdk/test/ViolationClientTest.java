@@ -14,7 +14,7 @@ public class ViolationClientTest {
 	@Test
 	public void testCondition() throws Exception {
 		BaseListOutput<ViolationQueryConditionOutput> baseListOutput = ViolationClient
-				.condition("violation-test", "8ACFGDSVRN1UC6A6QR4TJBJOIBKMSXBF");
+				.condition("", "");
 		Assert.assertNotNull(baseListOutput);
 		Assert.assertTrue(baseListOutput.getSuccess());
 		Assert.assertNotNull(baseListOutput.getData());
