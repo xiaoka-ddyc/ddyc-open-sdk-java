@@ -8,6 +8,8 @@ package com.xiaoka.business.online.open.sdk.output;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.io.Serializable;
+
 /**
  * 违章查询输出参数-违章明细
  * 
@@ -16,7 +18,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
  * @since [产品/模块版本] （可选）
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class QueryViolationItemOutput {
+public class QueryViolationItemOutput implements Serializable {
 
 	/** 违章编码 */
 	private String code;

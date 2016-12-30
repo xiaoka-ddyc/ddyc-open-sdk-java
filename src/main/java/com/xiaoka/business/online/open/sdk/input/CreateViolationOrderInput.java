@@ -15,16 +15,31 @@ import java.util.List;
  */
 public class CreateViolationOrderInput {
 
+	/**
+	 * 用户身份标识
+	 */
 	private String token;
 
+	/**
+	 * 违章记录唯一编码，查询出违章的每一个 code
+	 */
 	private List<String> violationCodes;
-
+	/**
+	 * 代办总金额（罚款金额+服务费）
+	 */
 	private String totalPrice;
-
+	/**
+	 * 第三方订单流水号
+	 */
 	private String outOrderNo;
-
+	/**
+	 * 下单时用户所在地经度
+	 */
 	private Double lng;
 
+	/**
+	 * 下单时用户所在地维度
+	 */
 	private Double lat;
 
 	public String getToken() {

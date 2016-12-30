@@ -6,6 +6,8 @@
  */
 package com.xiaoka.business.online.open.sdk.input;
 
+import com.sun.istack.internal.NotNull;
+
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -21,11 +23,13 @@ public class OfflineCreateOrderInput implements Serializable {
     /**
      * 第三方订单流水号
      */
+    @NotNull
     private String outOrderNo;
 
     /**
      * 手机号码
      */
+    @NotNull
     private String phone;
 
     /**
@@ -51,16 +55,19 @@ public class OfflineCreateOrderInput implements Serializable {
     /**
      * 商户ID
      */
+    @NotNull
     private Integer shopId;
 
     /**
      * 一级类目ID
      */
+    @NotNull
     private Integer lv1ServiceTypeId;
 
     /**
      * 二级类目ID
      */
+    @NotNull
     private Integer lv2ServiceTypeId;
 
     /**
@@ -93,6 +100,10 @@ public class OfflineCreateOrderInput implements Serializable {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public String getPlateNumber() {
