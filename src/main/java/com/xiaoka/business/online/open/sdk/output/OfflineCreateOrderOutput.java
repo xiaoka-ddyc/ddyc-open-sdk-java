@@ -1,5 +1,6 @@
 package com.xiaoka.business.online.open.sdk.output;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -7,7 +8,7 @@ import java.util.Date;
  * <p>
  * 功能说明：
  */
-public class OfflineCreateOrderOutput {
+public class OfflineCreateOrderOutput implements Serializable{
 	/**
 	 * 消费码
 	 */

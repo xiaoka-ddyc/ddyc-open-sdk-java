@@ -8,6 +8,7 @@ package com.xiaoka.business.online.open.sdk.output;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -17,7 +18,7 @@ import java.util.List;
  * @since [产品/模块版本] （可选）
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class QueryViolationOutput {
+public class QueryViolationOutput implements Serializable{
 
 	private String token;
 

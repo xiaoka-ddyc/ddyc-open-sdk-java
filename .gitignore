@@ -1,0 +1,11 @@
+/**/.settings/
+/**/.classpath
+/**/target/
+/**/bin/
+/**/.project
+/**/*.iml
+/.idea/
+/**/rebel-remote.xml
+/**/rebel.xml
+/**/.DS_Store
+/open-bff-web/env/intb.conf
