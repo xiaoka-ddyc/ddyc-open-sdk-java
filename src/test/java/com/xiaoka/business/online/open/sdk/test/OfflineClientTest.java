@@ -15,12 +15,13 @@ import org.junit.Test;
 import java.math.BigDecimal;
 
 /**
+ * 到店服务接入
  * @author huskar
  * @create 2016/12/5
  */
 public class OfflineClientTest {
-	private String appKey = "offline-test";
-	private String appSecret = "8ACFGDSVRN1UC6A6QR4TJBJOIBKMSXBF";
+	private String appKey = "EnterYourAppKey";
+	private String appSecret = "EnterYourAppSecret";
 
 	@Test
 	public void testShopGetdata() throws Exception {

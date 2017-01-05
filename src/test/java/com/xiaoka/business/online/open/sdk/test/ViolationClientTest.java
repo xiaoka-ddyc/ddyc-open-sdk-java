@@ -10,12 +10,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 违章查缴接入
  * @author huskar
  * @create 2016/12/5
  */
 public class ViolationClientTest {
-	private String appKey = "violation-test";
-	private String appSecret = "8ACFGDSVRN1UC6A6QR4TJBJOIBKMSXBF";
+	private String appKey = "EnterYourAppKey";
+	private String appSecret = "EnterYourAppSecret";
 
 	@Test
 	public void testCondition() throws Exception {
