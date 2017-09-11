@@ -29,7 +29,7 @@ public class ViolationClient {
 
 	public static BaseListOutput<ViolationQueryConditionAllOutput> conditionAll(String appKey, String appSecret)
 			throws Exception {
-		String responseText = HttpUtil.get("/violation/condition/all", appKey, appSecret);
+		String responseText = HttpUtil.get("/violation/condition/all/1.0", appKey, appSecret);
 		if (StringUtils.isBlank(responseText)) {
 			return null;
 		}
@@ -43,7 +43,7 @@ public class ViolationClient {
 	public static BaseObjectOutput query(String appKey, String appSecret,
 			QueryViolationInput queryViolationInput)
 			throws Exception {
-		String responseText = HttpUtil.post("/violation/query", serialize(queryViolationInput), appKey, appSecret);
+		String responseText = HttpUtil.post("/violation/query/1.0", serialize(queryViolationInput), appKey, appSecret);
 		if (StringUtils.isBlank(responseText)) {
 			return null;
 		}
