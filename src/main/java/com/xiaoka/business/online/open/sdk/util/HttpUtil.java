@@ -18,7 +18,7 @@ import java.nio.charset.Charset;
  */
 public class HttpUtil {
 //	private static final String HOST = "http://openapi.ddyc.com";//正式环境
-//	private static final String HOST = "http://intb-open.ddyc.com:8090";
+//	private static final String HOST = "https://int-open.ddyc.com:8443";
 	private static final String HOST = "http://localhost:8080/open";
 
 	private static Charset UTF_8 = Charset.forName("UTF-8");
